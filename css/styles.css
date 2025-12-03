@@ -128,8 +128,9 @@ select:focus-visible {
   font-size: 0.98rem;
 }
 
-/* HEADER (BARE <header> TAG VERSION) -------------------------------------- */
+/* HEADER ------------------------------------------------------------ */
 
+/* Turn the bare <header> into the sticky bar the design expects */
 header {
   background: linear-gradient(
       90deg,
@@ -149,6 +150,7 @@ header {
   gap: 0.9rem;
 }
 
+/* Logo image in the header */
 header .logo-img {
   width: 2.8rem;
   height: 2.8rem;
@@ -158,6 +160,7 @@ header .logo-img {
   flex-shrink: 0;
 }
 
+/* Brand text stack next to logo */
 .brand-lines {
   display: flex;
   flex-direction: column;
@@ -269,7 +272,7 @@ header .logo-img {
   background: linear-gradient(to right, #f3e7d8, #f7f1e6);
 }
 
-/* Match current <aside class="hero-aside"> in your HTML */
+/* HERO ASIDE CARD (used in current markup) */
 .hero-aside {
   padding: 1.05rem 1rem;
   border-radius: var(--rml-radius-lg);
@@ -596,40 +599,6 @@ textarea::placeholder {
   color: var(--rml-text-muted);
 }
 
-/* SOFT ART OVERLAYS / IMAGERY ------------------------------------------- */
-
-/* For inline art cards (e.g., around KB or hero visuals) */
-.art-soft {
-  border-radius: var(--rml-radius-lg);
-  overflow: hidden;
-  background-color: #f3e7d8;
-  box-shadow: var(--rml-shadow-soft);
-  border: 1px solid rgba(120, 92, 58, 0.55);
-}
-
-.art-soft img {
-  display: block;
-  width: 100%;
-  height: auto;
-  opacity: 0.32;              /* translucent by default */
-  mix-blend-mode: multiply;   /* “colored pencil on paper” effect */
-}
-
-/* For very faint background accents behind content */
-.art-ghost {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.12;
-  mix-blend-mode: multiply;
-}
-
-.art-ghost img {
-  width: 130%;
-  max-width: none;
-  transform: translate(-10%, -5%);
-}
-
 /* FOOTER ------------------------------------------------------------------ */
 
 .site-footer {
@@ -706,6 +675,10 @@ a:hover {
 
   .hero-copy h1 {
     font-size: 2.25rem;
+  }
+
+  header {
+    padding: 0.8rem 1.8rem;
   }
 
   .services-grid {
