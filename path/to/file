@@ -1,0 +1,5 @@
+# This is a revert of commit e507431fe170d29d659b2618061046c4e53ab8de
+
+Revert 'Redesign landing page and styles: new poster on warm paper layout for Rocky Mountain Logic site.'
+
+Reverted changes to restore the previous version of the landing page.
